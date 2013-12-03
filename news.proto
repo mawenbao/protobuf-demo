@@ -1,0 +1,24 @@
+package test.proto;
+
+message NewsHead {
+    optional sint32 channel_id = 1;
+}
+
+message NewsRecord {
+    optional bytes author = 1;
+    optional bytes title = 2;
+    optional bytes summary = 3;
+    optional bytes source = 4;
+
+    optional sint32 update_date = 5;
+    optional sint32 update_time = 6;
+
+    optional sint32 publish_date = 7;
+    optional sint32 publish_time = 8;
+}
+
+message NewsStruct {
+    required NewsHead head = 1;
+    repeated NewsRecord record = 2;
+}
+
