@@ -5,14 +5,17 @@ A simple demo of protobuf.
 
 build
 =====
-cmake .
-make
+    
+    cmake .
+    make
 
 run
 ===
-./demo
+
+    ./demo
 
 clean
 =====
-make clean
+
+    make clean
 
